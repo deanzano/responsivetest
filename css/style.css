@@ -43,7 +43,12 @@ div{
   padding: 2px;
 }
 
-/* The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.*/
+@media screen and (max-width: 998px) {
+  div{
+    width: 30%;
+  }
+}
+
 
 @media screen and (max-width: 772px) {
   div{
@@ -53,19 +58,6 @@ div{
     max-height: 30vh;
   }
 }
-
-/*The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width. */
-@media screen and (max-width: 998px) {
-  div{
-    width: 30%;
-  }
-}
-
-
-
-
-
-
 
 
 
